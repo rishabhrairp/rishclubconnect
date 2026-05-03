@@ -1,7 +1,7 @@
 {
-  "name": "club-connect",
+  "name": "rish-nexus",
   "version": "1.0.0",
-  "description": "[Your Name] project!",
+  "description": "Rish Nexus — Student Club Portal and Enrollment Management System",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,16 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/[Your Name]/club-connect.git"
+    "url": "git+https://github.com/Rish/rish-nexus.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rish",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/[Your Name]/club-connect/issues"
+    "url": "https://github.com/Rish/rish-nexus/issues"
   },
-  "homepage": "https://github.com/[Your Name]/club-connect#readme",
+  "homepage": "https://github.com/Rish/rish-nexus#readme",
   "dependencies": {
     "cors": "^2.8.6",
     "express": "^5.2.1"

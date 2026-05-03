@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
       <div className="container">
-        <Link className="navbar-brand fw-bold text-primary" to="/">[Your New Project Name]</Link>
+        <Link className="navbar-brand fw-bold text-primary" to="/">Rish Nexus</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span className="navbar-toggler-icon"></span>
         </button>

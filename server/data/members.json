@@ -1,0 +1,47 @@
+[
+  {
+    "memberID": "1777849305788",
+    "memberName": "Divvy",
+    "email": "divgetsnobitches@gmail.com",
+    "yearGrade": "3",
+    "affiliation": "Hello",
+    "status": "declined",
+    "timestamp": "2026-05-03T23:01:45.788Z"
+  },
+  {
+    "memberID": "1777849318577",
+    "memberName": "Divvy",
+    "email": "rishabhrairp@gmail.com",
+    "yearGrade": "3",
+    "affiliation": "Hello",
+    "status": "declined",
+    "timestamp": "2026-05-03T23:01:58.577Z"
+  },
+  {
+    "memberID": "1777849341615",
+    "memberName": "Divvy",
+    "email": "rishabhrairp@gmail.com",
+    "yearGrade": "3",
+    "affiliation": "Hello",
+    "status": "declined",
+    "timestamp": "2026-05-03T23:02:21.615Z"
+  },
+  {
+    "memberID": "1777849458440",
+    "memberName": "Divvy",
+    "email": "potatomato341@gmail.com",
+    "yearGrade": "3",
+    "affiliation": "Hello",
+    "status": "declined",
+    "timestamp": "2026-05-03T23:04:18.440Z"
+  },
+  {
+    "memberID": "1777849717714",
+    "memberName": "Divvy",
+    "email": "divgetsnobitches@gmail.com",
+    "yearGrade": "3",
+    "affiliation": "Hello",
+    "status": "pending",
+    "timestamp": "2026-05-03T23:08:37.714Z"
+  }
+]

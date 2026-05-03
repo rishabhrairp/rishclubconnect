@@ -6,7 +6,16 @@ const cors = require("cors");
 const app = express();
 const PORT = 5000;
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    'http://localhost:5500',
+    'http://127.0.0.1:5500',
+    'http://localhost:8080',
+    'http://localhost:5173'
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
 app.use(express.json());
 
 const dataDir = path.join(__dirname, "..", "data");

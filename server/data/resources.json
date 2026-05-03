@@ -1,0 +1,30 @@
+[
+  {
+    "eventID": "EVT-001",
+    "eventTitle": "Introduction to Web Development",
+    "category": "Workshop",
+    "duration": "2 hours",
+    "fee": 0
+  },
+  {
+    "eventID": "EVT-002",
+    "eventTitle": "Guest Speaker: AI in the Modern World",
+    "category": "Seminar",
+    "duration": "1.5 hours",
+    "fee": 5
+  },
+  {
+    "eventID": "EVT-003",
+    "eventTitle": "Annual Hackathon 2026",
+    "category": "Competition",
+    "duration": "48 hours",
+    "fee": 15
+  },
+  {
+    "eventID": "EVT-004",
+    "eventTitle": "React Fundamentals",
+    "category": "Workshop",
+    "duration": "3 hours",
+    "fee": 0
+  }
+]

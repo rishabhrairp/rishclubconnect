@@ -1,6 +1,6 @@
 const orderTableBody = document.getElementById("orderTableBody");
 
-fetch("http://localhost:3000/transactions")
+fetch("http://localhost:5000/api/submissions")
   .then(response => response.json())
   .then(data => {
     orderTableBody.innerHTML = "";
@@ -26,5 +26,5 @@ fetch("http://localhost:3000/transactions")
     });
   })
   .catch(error => {
-    console.log("Error loading transactions:", error);
+    console.error("Failed to load submission history:", error);
   });
