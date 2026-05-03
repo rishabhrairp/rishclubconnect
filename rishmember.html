@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[Your New Project Name] | Enrollment Registration</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="top-bar">
+    <div class="container">
+      <h1 class="site-title">Student Club Portal</h1>
+      <p class="site-subtitle">[Your New Project Name] Enrollment Registration</p>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg custom-nav">
+    <div class="container">
+      <a class="navbar-brand nav-brand" href="index.html">[Your New Project Name]</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="enrollment.html">Enrollment Registration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="finalization.html">Finalization</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <div class="row">
+      <div class="col-lg-5 mb-4">
+        <div class="form-box animate-slide-up">
+          <h2 class="mb-3">Enrollment Registration</h2>
+
+          <div id="messageBox"></div>
+
+          <form id="memberForm">
+            <input type="hidden" id="editIndex" value="-1" />
+
+            <div class="mb-3">
+              <label for="memberName" class="form-label">Enrollment Name *</label>
+              <input type="text" class="form-control" id="memberName" />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address *</label>
+              <input type="email" class="form-control" id="email" />
+            </div>
+
+            <div class="mb-3">
+              <label for="year" class="form-label">Year / Grade Level *</label>
+              <input type="text" class="form-control" id="year" />
+            </div>
+
+            <div class="mb-3">
+              <label for="affiliation" class="form-label">Organization / Affiliation *</label>
+              <input type="text" class="form-control" id="affiliation" />
+            </div>
+
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="text" class="form-control" id="phone" />
+            </div>
+
+            <button type="submit" class="btn btn-dark">Save Enrollment</button>
+            <button type="reset" class="btn btn-secondary ms-2" id="clearBtn">Clear</button>
+            <button type="button" onclick="addTestData()" class="btn btn-secondary ms-2">
+              Add Test Data
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="table-box animate-slide-up delay-200">
+          <h2 class="mb-3">Registered Enrollments</h2>
+
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search enrollments..."
+            class="form-control mb-3"
+          />
+
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped align-middle">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Year</th>
+                  <th>Affiliation</th>
+                  <th>Phone</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="memberTableBody">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer-area">
+    <div class="container">
+      <p class="mb-0">[Your New Project Name] | Student Club Portal Project</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/app.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#searchInput").on("keyup", function () {
+        let value = $(this).val().toLowerCase();
+
+        $("#memberTableBody tr").filter(function () {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+        });
+      });
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
